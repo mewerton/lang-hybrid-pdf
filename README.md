@@ -10,7 +10,7 @@
 |---|---|
 | **Status** | ![Tests](https://img.shields.io/badge/tests-passing-brightgreen) |
 | **License** | MIT |
-| **Python** | 3.9 – 3.12 |
+| **Python** | 3.12+ |
 | **Requires** | [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) 5 + `por` & `eng` language data |
 
 </div>

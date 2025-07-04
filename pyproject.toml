@@ -8,7 +8,7 @@ version = "0.0.1a0"
 description = "Hybrid (text+image) PDF loader with Docling + selective OCR"
 authors = [{name = "Mewerton de Melo Silva", email = "mewerton@gmail.com"}]
 license = {text = "MIT"}
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 
 dependencies = [
   "pymupdf>=1.24.4",
