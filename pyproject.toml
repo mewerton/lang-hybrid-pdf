@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lang-hybrid-pdf"
+version = "0.0.1a0"
+description = "Hybrid (text+image) PDF loader with Docling + selective OCR"
+authors = [{name = "Mewerton de Melo Silva", email = "mewerton@gmail.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+
+dependencies = [
+  "pymupdf>=1.24.4",
+  "pytesseract>=0.3.10",
+  "pdf2image>=1.17",
+  "Pillow>=10.0",
+  "rapidfuzz>=3.6.0",
+  "langchain-community>=0.0.35"   
+]
+
+[project.optional-dependencies]
+docling = [
+  "langchain-docling>=0.2.0",
+  "PyPDF2>=3.0"                 # necessário para gerar PDF OCRizado
+]
+
+layout  = [
+  "transformers>=4.41",
+  "sentence-transformers>=2.7"
+]
+
+# inclui as duas extras (forma recomendada)
+full = [
+  "lang-hybrid-pdf[docling]",
+  "lang-hybrid-pdf[layout]"
+]
+
+tests = ["pytest>=8.0"] 

@@ -1,4 +1,37 @@
-__pycache__/
+# ───────── Virtualenv ─────────
 .venv/
+env/
+venv/
+
+# ───────── Python runtime ─────
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# ───────── Testes / pytest ────
+.pytest_cache/
+
+# ───────── Build & packaging ──
 dist/
-*.pyc
+build/
+*.egg-info/
+*.egg
+*.whl
+MANIFEST
+pip-wheel-metadata/
+
+# ───────── IDEs / Editors ─────
+.vscode/
+.idea/
+*.sublime-*
+
+# ───────── OS genéricos ───────
+.DS_Store
+Thumbs.db
+
+# ───────── Logs / tmp ─────────
+*.log
+*.tmp
+*.bak
+*.swp
